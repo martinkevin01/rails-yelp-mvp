@@ -3,7 +3,7 @@
 
 <%@restaurants.each do |restaurant|%>
 <ul>
-<li><%= restaurant.name %></li>
+<li><%=link_to restaurant.name, restaurant_path(restaurant), class: 'text-decoration-none'%></li>
 </ul>
 <% end %>
 </div>
